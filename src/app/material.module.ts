@@ -21,7 +21,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
         MatCardModule
     ],
     exports: [
-        CommonModule,
         MatButtonModule,
         MatNativeDateModule,
         MatIconModule,

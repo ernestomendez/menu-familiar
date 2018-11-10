@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { LayoutComponent } from './layout/layout.component';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +6,5 @@ import { LayoutComponent } from './layout/layout.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'Menú familiar';
 }
