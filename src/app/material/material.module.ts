@@ -2,7 +2,7 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatInputModule,
-    MatSelectModule, MatRadioModule, MatCardModule, MatNativeDateModule } from '@angular/material';
+    MatSelectModule, MatRadioModule, MatCardModule, MatNativeDateModule, MatTabsModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
@@ -18,10 +18,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
         MatInputModule,
         MatSelectModule,
         MatRadioModule,
-        MatCardModule
+        MatCardModule,
+        MatTabsModule
     ],
     exports: [
-        CommonModule,
         MatButtonModule,
         MatNativeDateModule,
         MatIconModule,
@@ -32,7 +32,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
         MatInputModule,
         MatSelectModule,
         MatRadioModule,
-        MatCardModule
+        MatCardModule,
+        MatTabsModule
     ],
 })
 export class CustomMaterialModule { }
