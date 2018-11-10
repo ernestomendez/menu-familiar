@@ -10,12 +10,14 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { CustomMaterialModule } from './material/material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { LayoutComponent } from './layout/layout.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LayoutComponent
+    LayoutComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
