@@ -4,7 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { CommonModule } from '@angular/common';
 
 const routes: Routes = [
-  {path: 'testRoute', component: HomeComponent },
+  {path: 'home', component: HomeComponent },
   {path: '', redirectTo: '/home', pathMatch: 'full'}
 ];
 
