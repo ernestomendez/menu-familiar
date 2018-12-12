@@ -13,6 +13,7 @@ import { LayoutComponent } from './layout/layout.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './navigation/header/header.component';
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
+import { HorariosDeComidaComponent } from './horarios-de-comida/horarios-de-comida.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.com
     LayoutComponent,
     HomeComponent,
     HeaderComponent,
-    SidenavListComponent
+    SidenavListComponent,
+    HorariosDeComidaComponent
   ],
   imports: [
     BrowserModule,
