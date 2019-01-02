@@ -13,7 +13,7 @@ import { LayoutComponent } from './layout/layout.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './navigation/header/header.component';
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
-import { HorariosDeComidaComponent } from './horarios-de-comida/horarios-de-comida.component';
+import { HorarioDeComidaComponent } from './entities/horario-de-comida/horario-de-comida.component';
 
 
 @NgModule({
@@ -23,7 +23,7 @@ import { HorariosDeComidaComponent } from './horarios-de-comida/horarios-de-comi
     HomeComponent,
     HeaderComponent,
     SidenavListComponent,
-    HorariosDeComidaComponent
+    HorarioDeComidaComponent
   ],
   imports: [
     BrowserModule,
