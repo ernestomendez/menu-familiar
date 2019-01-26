@@ -3,7 +3,7 @@ import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatInputModule,
     MatSelectModule, MatRadioModule, MatCardModule, MatNativeDateModule, MatTabsModule, MatMenuModule,
-    MatTableModule } from '@angular/material';
+    MatTableModule, MatProgressBarModule, MatCheckboxModule, MatProgressSpinnerModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
@@ -22,7 +22,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
         MatCardModule,
         MatTabsModule,
         MatMenuModule,
-        MatTableModule
+        MatTableModule,
+        MatProgressBarModule,
+        MatCheckboxModule,
+        MatProgressSpinnerModule
     ],
     exports: [
         MatButtonModule,
@@ -38,7 +41,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
         MatCardModule,
         MatTabsModule,
         MatMenuModule,
-        MatTableModule
+        MatTableModule,
+        MatProgressBarModule,
+        MatCheckboxModule,
+        MatProgressSpinnerModule
     ],
 })
 export class CustomMaterialModule { }

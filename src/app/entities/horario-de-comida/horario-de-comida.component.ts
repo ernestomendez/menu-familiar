@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { MatTableDataSource } from '@angular/material';
-import { HttpErrorResponse, HttpResponse } from '@angular/common/http';
+import { HttpResponse, HttpErrorResponse } from '@angular/common/http';
 import { IHorarioDeComida } from '../../shared/model/horario-de-comida.model';
 import { HorarioDeComidaService } from '../horario-de-comida/horario-de-comida.service';
 import { Observable } from 'rxjs';
+import { ErrorHandlerService } from '../../shared/error-handler.service';
 
 @Component({
   selector: 'app-horarios-de-comida',
@@ -16,10 +17,9 @@ export class HorarioDeComidaComponent implements OnInit {
 
   public dataSource = new MatTableDataSource<IHorarioDeComida>();
 
-  constructor(private horarioDeComidaService: HorarioDeComidaService) { }
+  constructor(private horarioDeComidaService: HorarioDeComidaService, private errorService: ErrorHandlerService) { }
 
   ngOnInit() {
-    console.log('En el init');
     this.getAllHorarios();
   }
 
@@ -27,9 +27,13 @@ export class HorarioDeComidaComponent implements OnInit {
     console.log('aquí toy');
     this.horarioDeComidaService.getHorarios('api/v1/horariodecomida')
       .subscribe(
-        (res: HttpResponse<IHorarioDeComida[]>) => this.dataSource.data = res.body as IHorarioDeComida[],
-        (res: HttpErrorResponse) => console.log(res.message)
-       );
+        (res: HttpResponse<IHorarioDeComida[]>) => {
+          this.dataSource.data = res.body as IHorarioDeComida[];
+        },
+        (res: HttpErrorResponse)  => {
+          this.errorService.handleError(res.error);
+        }
+      );
     return;
   }
 
