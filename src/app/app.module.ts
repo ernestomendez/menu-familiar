@@ -17,6 +17,7 @@ import { HorarioDeComidaComponent } from './entities/horario-de-comida/horario-d
 import { HttpClientModule } from '@angular/common/http';
 import { NotFoundComponent } from './error-pages/not-found/not-found.component';
 import { ServerErrorComponent } from './error-pages/server-error/server-error.component';
+import { HorarioDeComidaDetailsComponent } from './entities/horario-de-comida/horario-de-comida-details.component';
 
 
 
@@ -29,7 +30,8 @@ import { ServerErrorComponent } from './error-pages/server-error/server-error.co
     SidenavListComponent,
     HorarioDeComidaComponent,
     NotFoundComponent,
-    ServerErrorComponent
+    ServerErrorComponent,
+    HorarioDeComidaDetailsComponent
   ],
   imports: [
     BrowserModule,
