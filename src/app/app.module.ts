@@ -13,12 +13,9 @@ import { LayoutComponent } from './layout/layout.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './navigation/header/header.component';
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
-import { HorarioDeComidaComponent } from './entities/horario-de-comida/horario-de-comida.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NotFoundComponent } from './error-pages/not-found/not-found.component';
 import { ServerErrorComponent } from './error-pages/server-error/server-error.component';
-import { HorarioDeComidaDetailsComponent } from './entities/horario-de-comida/horario-de-comida-details.component';
-
 
 
 @NgModule({
@@ -28,10 +25,8 @@ import { HorarioDeComidaDetailsComponent } from './entities/horario-de-comida/ho
     HomeComponent,
     HeaderComponent,
     SidenavListComponent,
-    HorarioDeComidaComponent,
     NotFoundComponent,
-    ServerErrorComponent,
-    HorarioDeComidaDetailsComponent
+    ServerErrorComponent
   ],
   imports: [
     BrowserModule,
