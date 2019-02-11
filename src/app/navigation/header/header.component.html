@@ -8,20 +8,20 @@
     <div>
       <a routerLink="/home">Menu familiar</a>
     </div>
-    <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
+    <div fxFlex fxLayout fxLayoutAlign="end" fxHide fxShow.gt-sm>
         <ul fxLayout fxLayoutGap="15px" class="navigation-items">
             <li>
-                <a routerLink="/owner">Owner Actions</a>
+                <a routerLink="//horario/horario-de-comida">Horarios de comida</a>
             </li>
             <li>
                 <a routerLink="/account">Account Actions</a>
             </li>
         </ul>
     </div>
-    <div fxFlex fxLayout fxLayoutAlign="end" fxHide.gt-xs>
+    <div fxFlex fxLayout fxLayoutAlign="end" fxHide fxShow.lt-md>
         <ul fxLayout fxLayoutGap="15px" class="navigation-items">
             <li>
-                <a mat-list-item [routerLink]="['/owner']" routerLinkActive="router-link-active">
+                <a mat-list-item [routerLink]="['/hora']" routerLinkActive="router-link-active">
                     <mat-icon>assignment_ind</mat-icon>
                 </a>
             </li>

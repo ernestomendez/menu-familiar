@@ -2,8 +2,11 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatInputModule,
-    MatSelectModule, MatRadioModule, MatCardModule, MatNativeDateModule, MatTabsModule, MatMenuModule } from '@angular/material';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+    MatSelectModule, MatRadioModule, MatCardModule, MatNativeDateModule, MatTabsModule, MatMenuModule,
+    MatTableModule, MatProgressBarModule, MatCheckboxModule, MatProgressSpinnerModule, MatSortModule } from '@angular/material';
+
+    //Remove this import because   https://stackoverflow.com/questions/39286667/browsermodule-has-already-been-loaded-error
+    //import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
     imports: [
@@ -14,13 +17,18 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
         MatSidenavModule,
         MatListModule,
         MatToolbarModule,
-        BrowserAnimationsModule,
+        //BrowserAnimationsModule,
         MatInputModule,
         MatSelectModule,
         MatRadioModule,
         MatCardModule,
         MatTabsModule,
-        MatMenuModule
+        MatMenuModule,
+        MatTableModule,
+        MatProgressBarModule,
+        MatCheckboxModule,
+        MatProgressSpinnerModule,
+        MatSortModule
     ],
     exports: [
         MatButtonModule,
@@ -29,13 +37,18 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
         MatSidenavModule,
         MatListModule,
         MatToolbarModule,
-        BrowserAnimationsModule,
+        //BrowserAnimationsModule,
         MatInputModule,
         MatSelectModule,
         MatRadioModule,
         MatCardModule,
         MatTabsModule,
-        MatMenuModule
+        MatMenuModule,
+        MatTableModule,
+        MatProgressBarModule,
+        MatCheckboxModule,
+        MatProgressSpinnerModule,
+        MatSortModule
     ],
 })
-export class CustomMaterialModule { }
+export class MaterialModule { }
