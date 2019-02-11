@@ -47,4 +47,4 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
         MatProgressSpinnerModule
     ],
 })
-export class CustomMaterialModule { }
+export class MaterialModule { }

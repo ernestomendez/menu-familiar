@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LayoutModule } from '@angular/cdk/layout';
 import { ReactiveFormsModule } from '@angular/forms';
-import { CustomMaterialModule } from './material/material.module';
+import { MaterialModule } from './material/material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { LayoutComponent } from './layout/layout.component';
 import { HomeComponent } from './home/home.component';
@@ -34,7 +34,7 @@ import { ServerErrorComponent } from './error-pages/server-error/server-error.co
     BrowserAnimationsModule,
     LayoutModule,
     ReactiveFormsModule,
-    CustomMaterialModule,
+    MaterialModule,
     FlexLayoutModule,
     HttpClientModule
   ],
