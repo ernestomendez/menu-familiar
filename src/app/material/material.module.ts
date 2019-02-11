@@ -4,7 +4,9 @@ import {CommonModule} from '@angular/common';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatInputModule,
     MatSelectModule, MatRadioModule, MatCardModule, MatNativeDateModule, MatTabsModule, MatMenuModule,
     MatTableModule, MatProgressBarModule, MatCheckboxModule, MatProgressSpinnerModule } from '@angular/material';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+    //Remove this import because   https://stackoverflow.com/questions/39286667/browsermodule-has-already-been-loaded-error
+    //import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
     imports: [
@@ -15,7 +17,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
         MatSidenavModule,
         MatListModule,
         MatToolbarModule,
-        BrowserAnimationsModule,
+        //BrowserAnimationsModule,
         MatInputModule,
         MatSelectModule,
         MatRadioModule,
@@ -34,7 +36,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
         MatSidenavModule,
         MatListModule,
         MatToolbarModule,
-        BrowserAnimationsModule,
+        //BrowserAnimationsModule,
         MatInputModule,
         MatSelectModule,
         MatRadioModule,
