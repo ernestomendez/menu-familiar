@@ -46,7 +46,7 @@ export class HorarioDeComidaComponent implements OnInit, AfterViewInit {
   }
 
   public redirectToDetails = (id: string) => {
-    const url = '/horario/details/${id}';
+    const url = `/horario/details/${id}`;
     this.router.navigate([url]);
   }
 }
