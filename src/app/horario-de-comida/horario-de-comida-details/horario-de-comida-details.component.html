@@ -1,0 +1,18 @@
+<section fxLayout="row wrap" fxLayoutAlign="center center">
+  <mat-card fxFlex="500px" fxFlex.xs="100%">
+    <mat-card-title>Horario de comida {{horarioDeComida?.id}}</mat-card-title>
+    <mat-card-content>
+      <div fxLayout="column wrap" fxLayoutGap="40px">
+        <div fxLayout="row wrap" fxFlex>
+          <div fxFlex><strong>Name:</strong></div>
+          <div fxFlex>{{horarioDeComida?.name}}</div>
+        </div>
+
+        <div fxLayout="row wrap" fxFlex>
+          <div fxFlex><strong>Active:</strong></div>
+          <div fxFlex>{{horarioDeComida?.active}}</div>
+        </div>        
+      </div>
+    </mat-card-content>
+  </mat-card>
+</section>

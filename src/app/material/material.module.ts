@@ -5,8 +5,8 @@ import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, Mat
     MatSelectModule, MatRadioModule, MatCardModule, MatNativeDateModule, MatTabsModule, MatMenuModule,
     MatTableModule, MatProgressBarModule, MatCheckboxModule, MatProgressSpinnerModule, MatSortModule } from '@angular/material';
 
-    //Remove this import because   https://stackoverflow.com/questions/39286667/browsermodule-has-already-been-loaded-error
-    //import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+    /*Remove this import because   https://stackoverflow.com/questions/39286667/browsermodule-has-already-been-loaded-error
+    import { BrowserAnimationsModule } from '@angular/platform-browser/animations';*/
 
 @NgModule({
     imports: [
@@ -17,7 +17,6 @@ import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, Mat
         MatSidenavModule,
         MatListModule,
         MatToolbarModule,
-        //BrowserAnimationsModule,
         MatInputModule,
         MatSelectModule,
         MatRadioModule,
@@ -37,7 +36,6 @@ import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, Mat
         MatSidenavModule,
         MatListModule,
         MatToolbarModule,
-        //BrowserAnimationsModule,
         MatInputModule,
         MatSelectModule,
         MatRadioModule,
