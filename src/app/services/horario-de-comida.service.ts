@@ -29,6 +29,13 @@ export class HorarioDeComidaService {
       .get<IHorarioDeComida>(url, { observe: 'response' });
   }
 
+  public create(route: string, horario: IHorarioDeComida): Observable<EntityResponseType> {
+    const url = this.createCompleteRoute(route, environment.urlAddress);
+    console.log(url);
+    return this.http
+      .post<IHorarioDeComida>(url, horario, { observe: 'response' });
+  }
+
   private createCompleteRoute = (route: string, envAddress: string) => {
     return `${envAddress}/${route}`;
   }

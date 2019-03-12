@@ -1,3 +1,24 @@
-<p>
-  horario-de-comida-create works!
-</p>
+<section fxLayout="row wrap" fxLayoutAlign="center center">
+  <mat-card fxFlex="500px" fxFlex.xs="100%">
+    <mat-card-title>Crear un nuevo horario de comida</mat-card-title>
+    <form [formGroup]="horarioForm" autocomplete="off" novalidate (ngSubmit)="createHorario(horarioForm.value)"
+      fxLayout="column wrap" fxLayoutAlign="center center" fxLayoutGap="10px">
+      <mat-card-content>
+        <mat-form-field>
+          <input matInput type="text" placeholder="Nombre" formControlName="name" id="name">
+          <mat-hint align="end">No mas de 60 caracteres de longitud.</mat-hint>
+          <mat-error *ngIf="hasError('name', 'required')">El nombre es obligatorio.</mat-error>
+          <mat-error *ngIf="hasError('name', 'maxlength')">Son mas de 60 caracteres.</mat-error>
+        </mat-form-field>
+
+        <div>
+          <mat-checkbox formControlName="active" id="active">Activo</mat-checkbox>
+        </div>
+      </mat-card-content>
+      <mat-card-actions align="center">
+        <button mat-raised-button color="primary" [disabled]="!horarioForm.valid">Crear</button>
+        <button type="button" mat-raised-button color="warn" (click)="onCancel()">Cancelar</button>
+      </mat-card-actions>
+    </form>
+  </mat-card>
+</section>
