@@ -4,6 +4,7 @@ import {CommonModule} from '@angular/common';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatInputModule,
     MatSelectModule, MatRadioModule, MatCardModule, MatNativeDateModule, MatTabsModule, MatMenuModule,
     MatTableModule, MatProgressBarModule, MatCheckboxModule, MatProgressSpinnerModule, MatSortModule } from '@angular/material';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
     /*Remove this import because   https://stackoverflow.com/questions/39286667/browsermodule-has-already-been-loaded-error
     import { BrowserAnimationsModule } from '@angular/platform-browser/animations';*/
@@ -27,7 +28,8 @@ import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, Mat
         MatProgressBarModule,
         MatCheckboxModule,
         MatProgressSpinnerModule,
-        MatSortModule
+        MatSortModule,
+        MatSnackBarModule
     ],
     exports: [
         MatButtonModule,
@@ -46,7 +48,8 @@ import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, Mat
         MatProgressBarModule,
         MatCheckboxModule,
         MatProgressSpinnerModule,
-        MatSortModule
+        MatSortModule,
+        MatSnackBarModule
     ],
 })
 export class MaterialModule { }
