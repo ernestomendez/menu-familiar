@@ -7,8 +7,8 @@ import { KeycloakConfig } from 'keycloak-angular';
 
 const keycloakConfig: KeycloakConfig = {
   url: 'http://localhost:8080/auth',
-  realm: 'dxesoft-lunchtime',
-  clientId: 'dxesoft-lunchtime-frontend'
+  realm: 'lunchtime-dxesoft',
+  clientId: 'comidas-front'
 };
 
 export const environment = {
